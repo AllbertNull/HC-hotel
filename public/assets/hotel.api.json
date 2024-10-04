@@ -1,0 +1,18 @@
+{
+	"id_cuarto": 1,
+	"name_room": "Habitación simple para 1 persona, cama matrimonial, wi-fi y aire acondicionado",
+	"tipos_cuarto": [
+		"simple",
+		"Individual",
+		"Suite"
+	],
+	"precio": 400,
+	"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consequuntur alias omnis impedit aperiam iusto aliquam cupiditate est facilis quam. At amet laborum quae fuga, eos quisquam eveniet eum nulla.",
+	"chirp": [
+		"1",
+		"2",
+		"3",
+		"4"
+	],
+	"disponible": true
+}
