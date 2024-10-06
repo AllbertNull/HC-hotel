@@ -3,7 +3,6 @@
 * {
 	--blanco: #fff;
 	--negro: #000;
-	--mid: #666666;
 	--sombra-paralela: #00000012;
 
 	--Roboto: 'Roboto Flex', arial, Sans-Serif;
@@ -14,12 +13,6 @@
 	--Light_F: 300;
 	--spacing: 0.25px;
 	--Nll_SCubic-Bezier: All 0.48s cubic-bezier(0.06, 0.06, 0.00, 1.04);
-
-	--width: calc(100% - 240px);
-	--gridRowGap: 24px;
-	--maxWidth: 1440px;
-	--fontSize: 18px;
-	--borderRadius: 6px;
 }
 
 *,
@@ -73,58 +66,44 @@ header {
 	margin: auto;
 }
 
-.rE1a {
-	--width: calc(100% - 240px);
-	--gridRowGap: 24px;
-	--maxWidth: 1440px;
-	--fontSize: 18px;
-	--borderRadius: 6px;
-	user-select: none;
-}
-
-.contenedor {
-	width: var(--width);
-	max-width: var(--maxWidth);
-	margin: auto;
-	padding-block: 48px;
-}
-
-.seccion-encabezado {
+.cabecera {
 	display: flex;
-	flex-direction: column;
-	gap: 5px;
-	margin-block-end: 24px;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--blanco);
+	block-size: 56px;
 }
 
-.texto-encabezado {
-	font-size: 36px;
-	line-height: 38px;
+.menu {
+	block-size: 100%;
+	align-self: flex-end;
+	margin-inline-start: auto;
+}
+
+.navegacion {
+	display: flex;
+	block-size: 100%;
+}
+
+.lista-navegacion {
+	display: -webkit-box;
+	block-size: 100%;
+	list-style-type: none;
+	position: relative;
+}
+
+.etiqueta-navegacion {
+	padding-inline: 16px;
+	display: flex;
+	block-size: 100%;
+	inline-size: 100%;
+	align-items: center;
+	font-size: 12px;
 	font-family: var(--Roboto);
-	font-weight: var(--SemiBold_F);
 	letter-spacing: var(--spacing);
-	color: var(--negro);
-}
-
-.parrafo-encabezado {
-	max-width: 600px;
-	font-size: 18px;
-	line-height: 28px;
-	font-family: var(--Roboto);
 	font-weight: var(--Normal_F);
-	letter-spacing: var(--spacing);
-	color: var(--mid);
-}
 
-.lista-tarjetas {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: var(--gridRowGap);
-	&.sm\:grid-cols-2 {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	} &.sm\:grid-cols-3 {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-	}
-	&.sm\:grid-cols-4 {
-		grid-template-columns: repeat(4, minmax(0, 1fr));
+	&:hover {
+		background-color: var(--sombra-paralela);
 	}
 }

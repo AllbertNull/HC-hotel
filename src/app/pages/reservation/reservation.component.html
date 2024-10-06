@@ -1,0 +1,64 @@
+<app-header></app-header>
+<main>
+	<div class="cont grid">
+		<div class="reservHeader">
+			<h1 class="headerTitle">Reserva ahora de manera rapida</h1>
+			<p class="headerParagraph">Hemos mejorado nuestros servicios para traerte una opcion mas comoda e inovadora a la hora de realizar tus reservaciones</p>
+			<div class="buttonsView">
+				<button type="button" role="button" class="btn btn-rooms" id="rooms" name="input-habitacion">Ver Habitaciones</button>
+			</div>
+		</div>
+		<form class="form-cont">
+			<h2 class="headerForm">Reservar Habitacion</h2>
+			<div class="formItem pos-rel dropdown">
+				<label for="roomSelect" class="labelItem">Tipo de Habitacion</label>
+				<button type="button" role="combobox" class="select" id="roomSelect" name="input-select-habitacion" onclick="boton()">
+					<span style="pointer-events: none;" class="selected">Selecciona una opcion</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+				</button>
+				<ul class="menudrop" id="dropmenu">
+					<li class="active">Individual</li>
+					<li>Doble</li>
+				</ul>
+			</div>
+			<div class="formItem flex">
+				<div class="checkIn">
+					<label for="roomcheckin">Dia de Entrada</label>
+					<input type="date" name="input-check-in" id="roomcheckin" class="select-clicked select" required />
+				</div>
+				<div class="checkOut">
+					<label for="roomcheckout">Dia de Salida</label>
+					<input type="date" name="input-check-out" id="roomcheckout" class="select-clicked select" required />
+				</div>
+			</div>
+			<div class="formItem">
+				<label for="roomCapacity">Numero de Personas</label>
+				<input type="number" name="input-add-capacidad" id="roomCapacity" class="select-clicked select" required />
+			</div>
+			<button type="submit" class="btn btn-submit">Reservar Ahora</button>
+		</form>
+	</div>
+	<div class="cont">
+		<div class="policies">
+			<h2 class="policiesHeader">Politicas de Reservacion</h2>
+			<div class="items">
+				<div class="item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card h-6 w-6 mt-1 text-amber-600" data-id="55"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+					<div>
+						<h3>Pagos</h3>
+						<p>Para realizar la reservacion de una habitacion se solicita el pago del 50% del cuarto, ya sea tarjeta de credito, debito, efectivo o transferencia bancaria.</p>
+					</div>
+				</div>
+				<div class="item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-6 w-6 mt-1 text-amber-600" data-id="60"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+					<div>
+						<h3>Cancelacion</h3>
+						<p>En caso de cancelacion, al realizar la cancelacion con anticipacion se rembolsa el anticipo que se habia pagado con anterioridad</p>
+						<br>
+						<p>Si la cancelacion se realiza el dia de la fecha de entrada no se realizara el rembolso del anticipo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

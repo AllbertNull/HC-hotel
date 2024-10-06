@@ -1,3 +1,7 @@
+a {
+	color: #000;
+	text-decoration: none;
+}
 /* GLOBAL STYLES */
 .Nll_clamp_1 {
 	display: -webkit-box;
@@ -103,7 +107,7 @@
 .card-description {
 	font-size: 14px;
 	font-family: var(--Roboto);
-	font-weight: var(--Regular_F);
+	font-weight: var(--Normal_F);
 	letter-spacing: var(--spacing);
 	line-height: 16px;
 	color: hsla(240, 10%, 3.9%, 0.62);
@@ -130,7 +134,7 @@
 .text-sm {
 	font-size: 14px;
 	font-family: var(--Roboto);
-	font-weight: var(--Regular_F);
+	font-weight: var(--Normal_F);
 	letter-spacing: var(--spacing);
 	line-height: 20px;
 }
@@ -163,7 +167,7 @@
 		display: inline-block;
 		font-size: 10px;
 		font-family: var(--Roboto);
-		font-weight: var(--Regular_F);
+		font-weight: var(--Normal_F);
 		letter-spacing: inherit;
 		line-height: inherit;
 	}

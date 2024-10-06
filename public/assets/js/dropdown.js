@@ -1,11 +1,11 @@
-let select = document.getElementById('roomSelect');
-let menu = document.getElementById('dropmenu');
-let options = document.querySelectorAll('#dropmenu li');
-let selected = document.querySelector('.selected');
+var select = document.getElementById('roomSelect');
+var menu = document.getElementById('dropmenu');
+var options = document.querySelectorAll('#dropmenu li');
+var selected = document.querySelector('.selected');
 
-let btnSwitch = document.querySelector('.btn-switch');
-let dotSwitch = document.querySelector('.dotSwitch');
-let input = document.querySelector('.checkbox');
+var btnSwitch = document.querySelector('.btn-switch');
+var dotSwitch = document.querySelector('.dotSwitch');
+var input = document.querySelector('.checkbox');
 
 
 function boton() {
