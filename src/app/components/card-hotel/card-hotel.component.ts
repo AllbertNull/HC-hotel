@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
 	selector: 'app-card-hotel',
 	standalone: true,
-	imports: [RouterModule,RouterLink],
+	imports: [RouterModule],
 	templateUrl: './card-hotel.component.html',
 	styleUrl: './card-hotel.component.css'
 })
